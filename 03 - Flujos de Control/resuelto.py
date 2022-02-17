@@ -29,5 +29,23 @@ print(listillo)
 print(listillo[1])
 print(4 in listillo)
 print(listillo.count(3))
-print()
+diccionando = { "masa madre" : ["harina organica", "agua", "starter"],
+                "pan campo" : ["pie", "harina", "agua", "sal"],
+                "clave" : ("fermentacion en frio") ,
+                "final": 24 }
+print(diccionando["masa madre"])
+diccionando["coccion"] = "fuego 250 por 30 min en olla"
+print(diccionando["coccion"])
+diccionando["final"] = "24 horas en frio de 5 grados"
+print(diccionando)
+del diccionando["coccion"]
+print(diccionando)
+palotes = {"pintorsco" : ["pintado", "pintor", "pincelada", "pinchar"],
+           "lienzo" : (1,2,3,4,5,),
+           "clavadito" :{ "adicionales" : ["pickles", "remolacha"],
+                          "aderezos" : ["mayonesa", "platzulesa"]}}
+print(palotes["clavadito"]["adicionales"])
+print(palotes.keys())
+print(len(diccionando))
+
 
