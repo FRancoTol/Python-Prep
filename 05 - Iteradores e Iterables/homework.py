@@ -24,14 +24,44 @@ print(lista)
 
 fibo =[0,1]
 lo = 2
-while lo < 31:
+while lo < 30:
     fibo.append(fibo[lo-1] + fibo[lo-2])
     lo += 1
 print(fibo)
 
-print(sum(fibo))
+li = 25
 
+while li < 30:
+    print(fibo[li]/fibo[li-1])
+    li += 1
 
+cadena = "Hola, Mundo. Esta es una practia del lenguaje de programacion de Python"
 
-while 2 == 2:
-    print("ESTOY SOLITO, Y NO HAY NADIE AQUI A MI LADO")
+for orden, letra in enumerate(cadena):
+    if( letra == "n"):
+        print(orden)
+
+diccionando = { "libro" : ["geralt de rivia"], 
+                "titulos" : ["el ultimo deseo", "la espada del destino", "la sangre de los elfos", "tiempo de odio"],
+                "material" : ["tapa dura cartone", "hoja cocida"]}
+
+print(diccionando)
+
+for h in (diccionando):
+    print(h)
+
+for f in list(cadena):
+    print(f)
+
+sylvester = ["metralleta", "arco", "cuchillo"]
+arnold = ["escopeta", "machine gun", "brazo robotico"]
+indestructibles = zip(sylvester, arnold)
+indestructibles = tuple(indestructibles)
+print(indestructibles)
+div_7 = []
+lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
+
+for r in lis:
+    if(r % 7 == 0):
+        div_7.append(r)
+print(div_7)
